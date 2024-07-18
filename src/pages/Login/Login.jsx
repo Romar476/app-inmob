@@ -41,11 +41,7 @@ export const Login = () => {
 
         await fetch( `${ VITE_API }/paneldeadministracion` , options )
         .then( res => res.json() )
-        .then( data => {
-            if( data.login ){
-                localStorage.setItem( 'user' , JSON.stringify( { login:true } ) )
-            }
-        } )
+        .then( data => setLogin( data.login ) )
     }
 
     return (
