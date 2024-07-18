@@ -102,5 +102,11 @@
     color: var(--color-primary);
     font-size: 2rem;
     font-weight: 600;
+    line-height: normal;
     margin: 0 0 1rem;
+}
+@media (max-width: 32rem){
+    .Propiedades-apartado{
+        font-size: 2rem;
+    }
 }
