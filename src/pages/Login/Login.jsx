@@ -59,7 +59,7 @@ export const Login = () => {
                     <label className="Login-label">Contraseña</label>
                     <input className="Login-input" type="password" name="pass" placeholder="Contraseña" required />
                 </fieldset>
-                <button className="Login-btn">Iniciar sesión</button>
+                <button className="Login-btn">Inichiar sesión</button>
             </form>
 
             { login != null && <MensajeError /> }
