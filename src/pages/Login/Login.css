@@ -45,5 +45,8 @@
     }
     .Login-fieldset{
         gap: .5rem;
-    }    
+    }
+    .Login-label{
+        font-size: .8rem;
+    }
 }
