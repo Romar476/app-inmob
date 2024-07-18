@@ -35,3 +35,9 @@
     margin: 2rem 0 0;
     font-weight: 600;
 }
+@media (max-width: 32rem){
+    .Login{
+        width: 80%;
+        padding: 1rem;
+    }
+}
