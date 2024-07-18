@@ -1,0 +1,177 @@
+.Breve{
+    /* background-color: magenta; */
+    width: 100%;
+}
+.Intro-wrapper{
+    width: 81rem;
+    margin: 2rem auto 1rem;
+    padding: 0 0 1rem;
+    border-bottom: 1px solid var(--color-primary) ;
+}
+.Intro-h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 0 2rem;
+    color: var(--color-primary);
+}
+.Intro-p{
+    color: var(--color-primary);
+    font-size: 1rem;
+    margin: 0 0 1rem;
+    hyphens: none;
+}
+.Breve-section{
+    /* background-color: cyan; */
+    width: 100%;
+    /* min-height: 380px; */
+}
+.Breve-wrapper{
+    width: 81rem;
+    margin: 0 auto 1rem;
+    padding: 0 0 1rem;
+    /* background-color: bisque; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 6rem;
+    border-bottom: 1px solid var(--color-primary) ;
+}
+.Breve-img{
+    /* background-color: green; */
+    width: 37.5rem;
+}
+.Breve-info{
+    /* background-color: yellow; */
+    width: 37.5rem;
+    /* min-height: 360px; */
+}
+.Breve-cintillo{
+    background-color: var(--color-primary);
+    display: inline-block;
+    color: var(--color-white);
+    padding: .3rem 1rem;
+    margin: 0 0 5px;
+    font-weight: 600;
+}
+.Breve-ref{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: .8rem 0;
+}
+.Breve-zona{
+    /* background-color: red; */
+    color: var(--color-primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+.Breve-h2{
+    /* background-color: red; */
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    line-height: normal;
+    margin: 1rem 0 .5rem;
+}
+.Breve-p{
+    /* background-color: yellow; */
+    color: var(--color-primary);
+    font-size: 1rem;
+    hyphens: none;
+    margin: 0 0 1rem;
+}
+.Breve-otras{
+    /* background-color: red; */
+    /* min-height: 100px; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.Breve-ul{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Breve-li{
+    /* background-color: blue; */
+    /* min-height: 60px; */
+    color: var(--color-primary);
+}
+.Breve-sup{}
+.Breve-inf{}
+.Breve-precio{
+    /* background-color: red; */
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* padding: 5px; */
+}
+.bold{
+    font-weight: 600;
+}
+
+@media (max-width: 87.5rem){
+    .Breve-wrapper{
+        width: 69rem;
+    }
+    .Intro-wrapper{
+        width: 69rem;
+    }
+    .Breve-img{
+        width: 31.5rem;
+    }
+    .Breve-info{
+        width: 31.5rem;
+    }
+}
+@media (max-width: 75rem){
+    .Breve-wrapper{
+        width: 58.875rem;
+    }
+    .Intro-wrapper{
+        width: 58.875rem;
+    }
+    .Breve-img{
+        width: 26.4375rem;
+    }
+    .Breve-info{
+        width: 26.4375rem;
+    }
+}
+@media (max-width: 62rem){
+    .Breve-wrapper{
+        width: 43.125rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        gap: 1.875rem;
+    }
+    .Intro-wrapper{
+        width: 43.125rem;
+    }
+    .Breve-img{
+        width: 100%;
+    }
+    .Breve-info{
+        width: 100%;
+    }
+}
+@media (max-width: 48rem){
+    .Breve-wrapper{
+        width: 90%;
+    }
+    .Intro-wrapper{
+        width: 90%;
+    }
+}

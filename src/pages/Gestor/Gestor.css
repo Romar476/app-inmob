@@ -1,0 +1,92 @@
+.Gestor{
+}
+.Propiedades{
+    width: 80%;
+    margin: 1rem auto;
+}
+.Propiedades-individual{
+    border-bottom: 4px double var(--color-primary);
+    margin: 0 0 2rem;
+    padding: 0 0 2rem;
+}
+.Propiedades-input{
+    border: 1px solid var(--color-grisclaro);
+    display: inline-block;
+    padding: .5rem;
+    margin: .5rem 0;
+}
+.Propiedades-fieldset{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.Propiedades-cintillo{
+    background-color: var(--color-primary);
+    color: var(--color-grisclaro);
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .3rem .8rem;
+}
+.Propiedades-epigrafe{
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1.6rem 0 0;
+}
+.Propiedades-descripcion{
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin: .5rem 0 .2rem;
+}
+.Propiedades-ref{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: .6rem 0 0;
+}
+.Propiedades-zona{
+    color: var(--color-primary);
+    font-size: .8rem;
+    font-weight: 600;
+}
+.Propiedades-h2{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    line-height: normal;
+    margin: .5rem 0 1rem;
+}
+.Propiedades-h3{
+    color: var(--color-primary);
+    font-weight: 600;
+    margin: .5rem 0 1rem;
+}
+.Propiedades-p{
+    color: var(--color-primary);
+    font-size: .9rem;
+    margin: 0 0 1rem;
+}
+.Propiedades-precio{
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+}
+.Propiedades-ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.Propiedades-btn{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-weight: 600;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin: 0 3rem 0 0;
+}

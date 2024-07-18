@@ -1,0 +1,37 @@
+.Login{
+    width: 30rem;
+    margin: 5rem auto;
+    padding: 1rem 5rem;
+    border: .3rem solid var(--color-primary);
+    border-radius: 1rem;
+    color: var(--color-primary);
+}
+.Login-form{}
+.Login-fieldset{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 0 1rem;
+}
+.Login-label{
+    width: 5rem;
+}
+.Login-input{
+    border: 1px solid var(--color-primary);
+    border-radius: .5rem;
+    padding: .3rem;
+}
+.Login-btn{
+    background-color: var(--color-primary);
+    border-radius: .5rem;
+    color: var(--color-white);
+    padding: .5rem 1rem;
+    margin: 2rem auto;
+}
+.Login-message{
+    text-align: center;
+    margin: 2rem 0 0;
+    font-weight: 600;
+}
