@@ -47,8 +47,14 @@ export const Login = () => {
     return (
         <div className="Login">
             <form className="Login-form" ref={ formulario } onSubmit={ postLogin }>
-                <input className="Login-input" type="text" name="user" placeholder="Usuario" required />
-                <input className="Login-input" type="password" name="pass" placeholder="Contraseña" required />
+                <fieldset className="Login-fieldset">
+                    <label className="Login-label">Usuario</label>
+                    <input className="Login-input" type="text" name="user" placeholder="Usuario" required />
+                </fieldset>
+                <fieldset className="Login-fieldset">
+                    <label className="Login-label">Contraseña</label>
+                    <input className="Login-input" type="password" name="pass" placeholder="Contraseña" required />
+                </fieldset>
                 <button className="Login-btn">Iniciar sesión</button>
             </form>
 
