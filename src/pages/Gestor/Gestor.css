@@ -90,3 +90,17 @@
     display: inline-block;
     margin: 0 3rem 0 0;
 }
+.Propiedades-btn2{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-weight: 600;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin: 1rem 3rem 3rem 0;
+}
+.Propiedades-apartado{
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+}

@@ -64,10 +64,9 @@ export const Gestor = () => {
             jardin : form[ 'jardin' ].value,
             piscina : form[ 'piscina' ].value,
             garaje : form[ 'garaje' ].value,
-            // imagenes : form[ 'imagenes' ].value
         }
 
-        form['referencia'].value = ''
+        form['referencia'].value = '' // Todas estas líneas son para que una vez añadida la nueva propiedad, todos los inputs vuelvan a su estado original vacío, mostrando su correspondiente placeholder
         form['cintillo'].value = ''
         form['titulocorto'].value = ''
         form['titulolargo'].value = ''
@@ -92,7 +91,6 @@ export const Gestor = () => {
         form['jardin'].value = ''
         form['piscina'].value = ''
         form['garaje'].value = ''
-        // form['imagenes'].value = ''
 
         let controller = new AbortController()
 
@@ -155,7 +153,6 @@ export const Gestor = () => {
         form[ 'piscina' ].value = buscar.piscina
         form[ 'jardin' ].value = buscar.jardin
         form[ 'garaje' ].value = buscar.garaje
-        // form[ 'imagenes' ].value = buscar.imagenes
     }
 
     const putPropiedades = async ( e ) => {
@@ -190,7 +187,6 @@ export const Gestor = () => {
             jardin : form[ 'jardin' ].value,
             piscina : form[ 'piscina' ].value,
             garaje : form[ 'garaje' ].value,
-            // imagenes : form[ 'imagenes' ].value
         }
 
         form['referencia'].value = ''
@@ -218,7 +214,6 @@ export const Gestor = () => {
         form['jardin'].value = ''
         form['piscina'].value = ''
         form['garaje'].value = ''
-        // form['imagenes'].value = ''
 
         let controller = new AbortController()
 
@@ -249,7 +244,7 @@ export const Gestor = () => {
                 </section>
 
                 <section className="Gestor Propiedades">
-                    <h2>Añadir una nueva Propiedad</h2>
+                    <h2 className="Propiedades-apartado">Añadir una nueva Propiedad</h2>
                     <form ref={ formularioAdd } onSubmit={ postPropiedades }>
                         <input type="text" className="Propiedades-input" name="referencia" placeholder="Referencia" />
                         <input type="text" className="Propiedades-input" name="cintillo" placeholder="Cintillo" />
@@ -276,42 +271,40 @@ export const Gestor = () => {
                         <input type="text" className="Propiedades-input" name="piscina" placeholder="Piscina" />
                         <input type="text" className="Propiedades-input" name="jardin" placeholder="Jardín" />
                         <input type="text" className="Propiedades-input" name="garaje" placeholder="Garaje" />
-                        {/* <input type="text" name="imagenes" placeholder="Imágenes" /> */}
-                        <input type="submit" value="Añadir Propiedad nueva" />
+                        <input type="submit" className="Propiedades-btn2" value="Añadir Propiedad nueva" />
                     </form>
                 </section>
 
                 <section className="Gestor Propiedades">
-                    <h2>Actualizar Propiedad</h2>
+                    <h2 className="Propiedades-apartado">Actualizar Propiedad</h2>
                     <form ref={ formularioPut } onSubmit={ putPropiedades }>
                         <input type="hidden" name="id" placeholder="ID" />
-                        <input type="text" name="referencia" maxLength="16" placeholder="Referencia" />
-                        <input type="text" name="cintillo" placeholder="Cintillo" />
-                        <input type="text" name="titulocorto" placeholder="Título corto" />
-                        <input type="text" name="titulolargo" placeholder="Título largo" />
-                        <input type="text" name="subtitulo" placeholder="Subtítulo" />
-                        <input type="text" name="zona" placeholder="Zona" />
-                        <input type="text" name="descripcioncorta" maxLength="200" placeholder="Descripción corta" />
-                        <input type="text" name="descripcionlarga" placeholder="Descripción larga" />
-                        <input type="text" name="descripcionlarga1" placeholder="Descripción larga 1" />
-                        <input type="text" name="descripcionlarga2" placeholder="Descripción larga 2" />
-                        <input type="text" name="descripcionlarga3" placeholder="Descripción larga 3" />
-                        <input type="text" name="descripcionlarga4" placeholder="Descripción larga 4" />
-                        <input type="text" name="descripcionlarga5" placeholder="Descripción larga 5" />
-                        <input type="text" name="descripcionlarga6" placeholder="Descripción larga 6" />
-                        <input type="text" name="descripcionlarga7" placeholder="Descripción larga 7" />
-                        <input type="text" name="descripcionlarga8" placeholder="Descripción larga 8" />
-                        <input type="text" name="precio" placeholder="Precio" />
-                        <input type="text" name="habitaciones" placeholder="Habitaciones" />
-                        <input type="text" name="banos" placeholder="Baños" />
-                        <input type="text" name="construido" placeholder="Superficie construída" />
-                        <input type="text" name="terraza" placeholder="Terraza" />
-                        <input type="text" name="parcela" placeholder="Parcela" />
-                        <input type="text" name="piscina" placeholder="Piscina" />
-                        <input type="text" name="jardin" placeholder="Jardín" />
-                        <input type="text" name="garaje" placeholder="Garaje" />
-                        {/* <input type="text" name="imagenes" placeholder="Imágenes" /> */}
-                        <input type="submit" value="Actualizar Propiedad" />
+                        <input type="text" className="Propiedades-input" name="referencia" maxLength="16" placeholder="Referencia" />
+                        <input type="text" className="Propiedades-input" name="cintillo" placeholder="Cintillo" />
+                        <input type="text" className="Propiedades-input" name="titulocorto" placeholder="Título corto" />
+                        <input type="text" className="Propiedades-input" name="titulolargo" placeholder="Título largo" />
+                        <input type="text" className="Propiedades-input" name="subtitulo" placeholder="Subtítulo" />
+                        <input type="text" className="Propiedades-input" name="zona" placeholder="Zona" />
+                        <input type="text" className="Propiedades-input" name="descripcioncorta" maxLength="200" placeholder="Descripción corta" />
+                        <input type="text" className="Propiedades-input" name="descripcionlarga" placeholder="Descripción larga" />
+                        <input type="text" className="Propiedades-input" name="descripcionlarga1" placeholder="Descripción larga 1" />
+                        <input type="text" className="Propiedades-input" name="descripcionlarga2" placeholder="Descripción larga 2" />
+                        <input type="text" className="Propiedades-input" name="descripcionlarga3" placeholder="Descripción larga 3" />
+                        <input type="text" className="Propiedades-input" name="descripcionlarga4" placeholder="Descripción larga 4" />
+                        <input type="text" className="Propiedades-input" name="descripcionlarga5" placeholder="Descripción larga 5" />
+                        <input type="text" className="Propiedades-input" name="descripcionlarga6" placeholder="Descripción larga 6" />
+                        <input type="text" className="Propiedades-input" name="descripcionlarga7" placeholder="Descripción larga 7" />
+                        <input type="text" className="Propiedades-input" name="descripcionlarga8" placeholder="Descripción larga 8" />
+                        <input type="text" className="Propiedades-input" name="precio" placeholder="Precio" />
+                        <input type="text" className="Propiedades-input" name="habitaciones" placeholder="Habitaciones" />
+                        <input type="text" className="Propiedades-input" name="banos" placeholder="Baños" />
+                        <input type="text" className="Propiedades-input" name="construido" placeholder="Superficie construída" />
+                        <input type="text" className="Propiedades-input" name="terraza" placeholder="Terraza" />
+                        <input type="text" className="Propiedades-input" name="parcela" placeholder="Parcela" />
+                        <input type="text" className="Propiedades-input" name="piscina" placeholder="Piscina" />
+                        <input type="text" className="Propiedades-input" name="jardin" placeholder="Jardín" />
+                        <input type="text" className="Propiedades-input" name="garaje" placeholder="Garaje" />
+                        <input type="submit" className="Propiedades-btn2" value="Actualizar Propiedad" />
                     </form>
                 </section>
             </div>
