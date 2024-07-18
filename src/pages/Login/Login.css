@@ -40,4 +40,10 @@
         width: 80%;
         padding: 1rem;
     }
+    .Login-input{
+        width: 10rem;
+    }
+    .Login-fieldset{
+        gap: .5rem;
+    }    
 }
