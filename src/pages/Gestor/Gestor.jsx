@@ -248,20 +248,20 @@ export const Gestor = () => {
                     <form ref={ formularioAdd } onSubmit={ postPropiedades }>
                         <input type="text" className="Propiedades-input" name="referencia" placeholder="Referencia" />
                         <input type="text" className="Propiedades-input" name="cintillo" placeholder="Cintillo" />
-                        <input type="text" className="Propiedades-input" name="titulocorto" placeholder="Título corto" />
-                        <input type="text" className="Propiedades-input" name="titulolargo" placeholder="Título largo" />
-                        <input type="text" className="Propiedades-input" name="subtitulo" placeholder="Subtítulo" />
-                        <input type="text" className="Propiedades-input" name="descripcioncorta" placeholder="Descripción corta" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga" placeholder="Descripción larga" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga1" placeholder="Descripción larga 1" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga2" placeholder="Descripción larga 2" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga3" placeholder="Descripción larga 3" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga4" placeholder="Descripción larga 4" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga5" placeholder="Descripción larga 5" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga6" placeholder="Descripción larga 6" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga7" placeholder="Descripción larga 7" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga8" placeholder="Descripción larga 8" />
-                        <input type="text" className="Propiedades-input" name="zona" placeholder="Zona" />
+                        <input type="text" className="Propiedades-input" maxlength="40" name="titulocorto" placeholder="Título corto" />
+                        <input type="text" className="Propiedades-input" maxlength="100" name="titulolargo" placeholder="Título largo" />
+                        <input type="text" className="Propiedades-input" maxlength="50" name="subtitulo" placeholder="Subtítulo" />
+                        <input type="text" className="Propiedades-input" name="descripcioncorta" maxLength="200" placeholder="Descripción corta" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga" placeholder="Descripción larga" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga1" placeholder="Descripción larga 1" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga2" placeholder="Descripción larga 2" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga3" placeholder="Descripción larga 3" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga4" placeholder="Descripción larga 4" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga5" placeholder="Descripción larga 5" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga6" placeholder="Descripción larga 6" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga7" placeholder="Descripción larga 7" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga8" placeholder="Descripción larga 8" />
+                        <input type="text" className="Propiedades-input" maxlength="40" name="zona" placeholder="Zona" />
                         <input type="text" className="Propiedades-input" name="precio" placeholder="Precio" />
                         <input type="text" className="Propiedades-input" name="habitaciones" placeholder="Habitaciones" />
                         <input type="text" className="Propiedades-input" name="banos" placeholder="Baños" />
@@ -281,20 +281,20 @@ export const Gestor = () => {
                         <input type="hidden" name="id" placeholder="ID" />
                         <input type="text" className="Propiedades-input" name="referencia" maxLength="16" placeholder="Referencia" />
                         <input type="text" className="Propiedades-input" name="cintillo" placeholder="Cintillo" />
-                        <input type="text" className="Propiedades-input" name="titulocorto" placeholder="Título corto" />
-                        <input type="text" className="Propiedades-input" name="titulolargo" placeholder="Título largo" />
-                        <input type="text" className="Propiedades-input" name="subtitulo" placeholder="Subtítulo" />
-                        <input type="text" className="Propiedades-input" name="zona" placeholder="Zona" />
+                        <input type="text" className="Propiedades-input" maxlength="40" name="titulocorto" placeholder="Título corto" />
+                        <input type="text" className="Propiedades-input" maxlength="100" name="titulolargo" placeholder="Título largo" />
+                        <input type="text" className="Propiedades-input" maxlength="50" name="subtitulo" placeholder="Subtítulo" />
+                        <input type="text" className="Propiedades-input" maxlength="40" name="zona" placeholder="Zona" />
                         <input type="text" className="Propiedades-input" name="descripcioncorta" maxLength="200" placeholder="Descripción corta" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga" placeholder="Descripción larga" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga1" placeholder="Descripción larga 1" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga2" placeholder="Descripción larga 2" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga3" placeholder="Descripción larga 3" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga4" placeholder="Descripción larga 4" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga5" placeholder="Descripción larga 5" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga6" placeholder="Descripción larga 6" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga7" placeholder="Descripción larga 7" />
-                        <input type="text" className="Propiedades-input" name="descripcionlarga8" placeholder="Descripción larga 8" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga" placeholder="Descripción larga" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga1" placeholder="Descripción larga 1" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga2" placeholder="Descripción larga 2" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga3" placeholder="Descripción larga 3" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga4" placeholder="Descripción larga 4" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga5" placeholder="Descripción larga 5" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga6" placeholder="Descripción larga 6" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga7" placeholder="Descripción larga 7" />
+                        <textarea className="Propiedades-input" rows="5" name="descripcionlarga8" placeholder="Descripción larga 8" />
                         <input type="text" className="Propiedades-input" name="precio" placeholder="Precio" />
                         <input type="text" className="Propiedades-input" name="habitaciones" placeholder="Habitaciones" />
                         <input type="text" className="Propiedades-input" name="banos" placeholder="Baños" />

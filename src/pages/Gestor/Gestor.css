@@ -11,7 +11,7 @@
 }
 .Propiedades-input{
     border: 1px solid var(--color-grisclaro);
-    display: inline-block;
+    width: 100%;
     padding: .5rem;
     margin: .5rem 0;
 }
