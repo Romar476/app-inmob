@@ -19,6 +19,7 @@ export const Gestor = () => {
     } , [] )
 
     // FUNCIONES
+    // Con esta función, pedimos la información a la API sobre todas las propiedades existentes en la bbdd
     const pedirPropiedades = async () => {
         let controller = new AbortController()
         let options = {
@@ -33,6 +34,7 @@ export const Gestor = () => {
         .finally( () => controller.abort() )
     }
 
+    // Con esta otra función se crea un formulario para añadir propiedades nuevas a la bbdd. Los valres que haya en cada uno de los inputs, serán los que se guardarán en la bbdd, mientras que lo inputs que no se completen, simplemente no se rellenarán en la bbdd y no se mostrarán en el frontend
     const postPropiedades = async ( e ) => {
         e.preventDefault()
 
@@ -108,6 +110,7 @@ export const Gestor = () => {
         .finally( () => controller.abort() )
     }
 
+    // Con esta pequeña función, simplemente borramos una entrada completa de la bbdd
     const deletePropiedades = async ( _id ) => {
 
         let controller = new AbortController()
@@ -124,6 +127,7 @@ export const Gestor = () => {
         .finally( () => controller.abort() )
     }
 
+    // Esta es la función por la cual, al hacer click sobre el botón Actualizar que hay en cada una de las propiedades, nos busca primero la correspondiente propiedad y luego copia los valores de cada uno de los campos en el formulario Actualizar propiedad
     const putPropiedadesBoton = async ( _id ) => {
         const buscar = propiedades.find( eachPropiedad => eachPropiedad._id === _id)
         const { current : form } = formularioPut
@@ -155,6 +159,7 @@ export const Gestor = () => {
         form[ 'garaje' ].value = buscar.garaje
     }
 
+    // Esta es parecida a la anterior, solo que en esta ocasión, una vez actualizado el formulario, al hacer click sobre el botón Actualizar propiedad, se muestran los nuevos valores en la parte superior en la que se encuentran todas las propiedades
     const putPropiedades = async ( e ) => {
         e.preventDefault()
 
@@ -312,6 +317,7 @@ export const Gestor = () => {
     )
 }
 
+// Componente PropiedadLista
 const PropiedadLista = ( props ) => {
 
     const { _id , referencia , cintillo , titulo_corto , titulo_largo , subtitulo , zona , descripcion_corta , descripcion_larga , descripcion_larga1 , descripcion_larga2 , descripcion_larga3 , descripcion_larga4 , descripcion_larga5 , descripcion_larga6 , descripcion_larga7 , descripcion_larga8 , precio , habitaciones , banos , construido , terraza , parcela , jardin , piscina , garaje , imagenes } = props

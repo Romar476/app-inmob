@@ -46,6 +46,7 @@ export const Propiedades = () => {
 
 const PropiedadLista = ( props ) => {
 
+    // Aunque finalmente no las he podido utilizar, he dejado preparadas las props para poder utilizar las imágenes de la bbdd
     const { _id , referencia , cintillo , titulo_corto , zona , descripcion_corta , precio , habitaciones , construido , banos , terraza , parcela , jardin , piscina , garaje , imagenes } = props
     const { src , srcset , alt } = imagenes ?? {};
 
@@ -53,7 +54,7 @@ const PropiedadLista = ( props ) => {
         <>
             <div className="Breve-wrapper">
                 <div className="Breve-img">
-                    <picture>
+                    <picture> // Mediante estas cuatro líneas, damos la posibilidad de que el navegador elija la foto en formato .jpg o .webp
                         <source srcSet={ ( `assets/001_ref_tim01_9_1.webp`) } alt={alt} type="image/webp"/>
                         <img src={ ( `assets/001_ref_tim01_9_1.jpg`) } alt={alt} type="image/jpg"/>
                     </picture>

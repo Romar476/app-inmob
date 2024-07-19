@@ -6,7 +6,6 @@
     border-radius: 1rem;
     color: var(--color-primary);
 }
-.Login-form{}
 .Login-fieldset{
     display: flex;
     flex-flow: row nowrap;
