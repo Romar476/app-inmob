@@ -344,7 +344,7 @@ const PropiedadLista = ( props ) => {
             <p className="Propiedades-p">{ descripcion_larga6 }</p>
             <p className="Propiedades-p">{ descripcion_larga7 }</p>
             <p className="Propiedades-p">{ descripcion_larga8 }</p>
-            <p className="Propiedades-precio">{ precio } €</p>
+            <p className="Propiedades-precio">{ precio }</p>
             <div className="Propiedades-ul">
                 <p className="Propiedades-p">{ habitaciones }</p>
                 <p className="Propiedades-p">{ banos }</p>
