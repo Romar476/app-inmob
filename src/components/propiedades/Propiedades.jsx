@@ -54,7 +54,7 @@ const PropiedadLista = ( props ) => {
         <>
             <div className="Breve-wrapper">
                 <div className="Breve-img">
-                    <picture> // Mediante estas cuatro líneas, damos la posibilidad de que el navegador elija la foto en formato .jpg o .webp
+                    <picture>
                         <source srcSet={ ( `assets/001_ref_tim01_9_1.webp`) } alt={alt} type="image/webp"/>
                         <img src={ ( `assets/001_ref_tim01_9_1.jpg`) } alt={alt} type="image/jpg"/>
                     </picture>
